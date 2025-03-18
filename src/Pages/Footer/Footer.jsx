@@ -1,21 +1,28 @@
 import { FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
+
+    const year = new Date().getFullYear();
+
   return (
     <>
       <div className="flex">
+
         <div className="w-[960px] h-[400px] bg-[#1F2937]">
-           <div className="mt-[97px] ml-[200px] inline-block">
+           <div className="mt-[97px] ml-[311px] inline-block">
             <h1 className="text-[#fff] w-[345px] text-center mb-[24px] text-[32px] font-[inter] font-medium">CONTACT US</h1>
                 <p className="text-[#fff] text-[20px] w-[345px] text-center">123 ABS Street, Uni 21, Bangladesh <br /> +88 123456789 <br /> Mon - Fri: 08:00 - 22:00 <br /> Sat - Sun: 10:00 - 23:00</p>
            </div>
         </div>
+
         <div className="w-[960px] bg-[#111827] h-[400px]">
-        <div className="mb-[32px]">
+
+        <div className="mb-[32px] mt-[97px]">
             <h1 className="text-[#fff] w-[345px] text-center mb-[24px] text-[32px] font-[inter] font-medium">Follow US</h1>
             <p className="text-[#fff] text-[20px] w-[345px] text-center">Join us on social media</p>
         </div>
-        <div className="flex ml-[200px]">
+
+        <div className="flex w-[345px] justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                 <path d="M20.2105 35V19.036H25.5668L26.3704 12.8127H20.2105V8.84007C20.2105 7.03885 20.7087 5.81134 23.2945 5.81134L26.5872 5.80998V0.243652C26.0178 0.169654 24.0632 0 21.7882 0C17.0376 0 13.7853 2.89969 13.7853 8.22372V12.8127H8.41278V19.036H13.7853V35H20.2105Z" fill="white"/>
             </svg>
@@ -36,6 +43,10 @@ export default function Footer() {
             </svg>
         </div>
         </div>
+
+      </div>
+      <div className="bg-[#151515] flex justify-center">
+        <p className="text-[#fff] font-[inter] text-[20px] font-medium pt-[17px] pb-[17px]">Copyright © {year} . All rights reserved.</p>
       </div>
     </>
   );
